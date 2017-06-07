@@ -1,0 +1,16 @@
+{{#each results}}
+
+<p>Name: {{resname}}</p>
+Favorite: {{favorite}}
+{{/each}}
+
+<br>
+<hr>
+{{#each results}}
+  {{#if review}}
+    <h4>{{title}} - by {{name}}</h4>
+    <p>
+      {{stars}} stars - {{review}}
+    </p>
+  {{/if}}
+{{/each}}
